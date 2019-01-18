@@ -18,7 +18,7 @@ tabs.forEach(tab => {
           const textArr = data.content.split(' ')
           let max = 0;
           let maxLetter = ''
-          const numOfCopies = textArr.reduce((acc, el) => {
+          textArr.reduce((acc, el) => {
             acc[el] = (acc[el] || 0) + 1;
             if (max < acc[el]) {
               max = acc[el]
